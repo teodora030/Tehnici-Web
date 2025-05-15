@@ -1,0 +1,113 @@
+#hamburger,
+#ch-menu {
+  display: none;
+}
+
+nav {
+  background-color: var(--color-bleu);
+  --inaltime-meniu: 50px;
+  height: var(--inaltime-meniu);
+  --latime-buton: 140px;
+  position: sticky;
+  top: 0;
+}
+
+/* ----------------------------------------------------------------------*/
+ul.meniu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+ul.meniu ul {
+  display: none;
+  padding: 0;
+  animation-name: animatie-submeniu;
+  animation-fill-mode: forwards;
+  animation-duration: 0.75s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  transform-origin: 50% 0;
+}
+ul.meniu li {
+  width: var(--latime-buton);
+  height: var(--inaltime-meniu);
+  border: 1px solid var(--color-accent2);
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  line-height: var(--inaltime-meniu);
+  transition: all 0.7s linear;
+}
+ul.meniu li div.imag-icon {
+  display: none;
+}
+ul.meniu li:hover > a {
+  color: black;
+}
+ul.meniu li:hover > div {
+  color: black;
+}
+ul.meniu li:hover ul {
+  display: block;
+  background-color: var(--color-bleu);
+  position: relative;
+  list-style-type: none;
+  left: -1px;
+  font-size: 0.7em;
+}
+ul.meniu a, ul.meniu div {
+  color: var(--color-secondary);
+  /*MOV- ESTE SUPRASCRIS DE NEGRU MOMENTAN, AM SCHIMBAT CU > PT LI:HOVER>A*/
+  text-decoration: none;
+  transition: all 0.7s linear;
+  display: block;
+  height: 100%;
+  cursor: pointer;
+}
+ul.meniu > li:hover {
+  /*sa apara shadow doar pt fiii directi ai ul, pt suboptiuni nu*/
+  box-shadow: inset 5px 5px 50px -20px #FFF;
+  transition: all 0.5s ease;
+}
+
+meniu ul ul {
+  position: absolute;
+  display: none;
+  background-color: white;
+  z-index: 9999;
+}
+
+@keyframes animatie-submeniu {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(100%);
+  }
+}
+@media screen and (min-width: 800px) {
+  ul.meniu ul li a {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  ul.meniu ul li a::before {
+    content: "->";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-10px, -50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  ul.meniu ul li a:hover::before {
+    transform: translate(0, -50%);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=nav.css.map */

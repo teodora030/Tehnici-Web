@@ -1,0 +1,18 @@
+WEBVTT - Made with VTT Creator
+
+STYLE 
+::cue{
+    background-color:rgba(105, 0, 146, 0.9);
+}
+
+00:00.000 --> 00:02.000 position:50% align:end
+Welcome!
+
+00:03.005 --> 00:06.000 position:50% align:end
+This leaf reminds me of childhood
+
+00:06.980 --> 00:08.980 position:50% align:end
+very beautuful
+
+00:10.105 --> 00:12.105 position:50% align:end
+let's admire nature <b>together</b>

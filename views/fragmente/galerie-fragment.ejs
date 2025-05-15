@@ -1,0 +1,89 @@
+<section id="galerie-statica">
+            <h2>Galerie woooowowowowowoo!!!!!</h2>
+            <div id="grid-galerie">
+
+                <% 
+
+                    d= new Date()
+                    d.getDay()
+                    vect_zile= ["duminica","luni","marti","miercuri","joi","vineri","sambata"]
+                    zi_curenta=vect_zile[d.getDay()]
+
+                    const imaginiAfisabile = [];
+
+                    
+                    
+                    
+                    for (let imag of locals.imagini) { %>
+
+                        <% 
+                        let shouldDisplay = false;
+                        if (imag.intervale_zile){
+                            for (let interval of imag.intervale_zile) {
+                                    const zi_start = vect_zile.indexOf(interval[0]);
+                                    const zi_end = vect_zile.indexOf(interval[1]);
+                                    // const zi_curenta_index = vect_zile.indexOf(zi_curenta);
+                                    zi_curenta_index=2;
+                                    
+                                    // Verificăm dacă ziua curentă este în interval
+                                    if (zi_curenta_index >= zi_start && zi_curenta_index <= zi_end) {
+                                        shouldDisplay = true;
+                                        break;
+                                }
+                            }
+
+                        } 
+                        
+                        
+                        
+                        if (shouldDisplay) { 
+                            imaginiAfisabile.push(imag);
+                        }
+                        } %>
+
+                        <% const finaleImagini= imaginiAfisabile.slice(0,imaginiAfisabile.length - (imaginiAfisabile.length %2));
+                        
+                        %>
+
+                       <% finaleImagini.forEach((imag,index) => { %>
+                    <figure>
+                        <picture title="<%- imag.descriere_poza%>">
+                            
+                            <source srcset="<%- imag.fisier_mediu %>" media="screen and (max-width:1200px)"/>
+                            <source srcset="<%- imag.fisier_imagine %>" media="screen and (min-width:1201px)"/>
+                            <img src = "<%- imag.fisier_imagine %>" alt= "<% imag.continut_alternativ || imag.nume_poza  %>">
+                       
+                        </picture>
+                        <figcaption>
+                            <%= imag.descriere_poza%>
+                            <% if (imag.cc_by){%>
+                                <span class="credit">© <%= imag.cc_by %></span>
+                                <% } %>
+                            
+                            
+                            </figcaption>
+                    </figure>
+
+                   
+
+                    
+
+                <% }) ;%>
+                
+
+                
+
+
+
+                
+
+                    <!--
+                <figure>
+                <img src="/resurse/imagini/galerie/avion.jpg" alt="Avion">
+                <figcaption>Av</figcaption>
+                </figure> -->
+                
+
+
+            </div>
+</section>

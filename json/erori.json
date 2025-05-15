@@ -1,0 +1,56 @@
+{
+    "cale_baza": "/resurse/imagini/erori",
+    "eroare_default":{
+        "titlu":"Eroare !!!",
+        "text": "A survenit o eroare.",
+        "imagine":"contradictie.png"
+    },
+    "info_erori": [
+        {
+            "identificator":404,
+            "status":true,
+            "titlu":"404 - not found",
+            "text": "Nu-i inca aici, incearca mai tarziu",
+            "imagine":"pisica_sorry.jpg"
+        },
+        {
+            "identificator":403,
+            "status":true,
+            "titlu":"403 - ti-am dat block",
+            "text": "n-ai voie",
+            "imagine":"interzis.png"
+        },
+        {
+            "identificator":400,
+            "status":true,
+            "titlu":"400 - bad request",
+            "text": "Cerere gresita. Iti trebuie si dosar cu sina.",
+            "imagine":"interzis.png"
+        },
+        
+        {
+            "identificator":1,
+            "status":false,
+            "titlu":"Site în lucru",
+            "text": "Muncim, muncim!",
+            "imagine":"jean-write.png"
+        },
+        
+        {
+            "identificator":2,
+            "status":false,
+            "titlu":"Eroare baza date",
+            "text": "Reveniti mai tarziu!",
+            "imagine":"eroare_bd.png"
+        },
+        
+        {
+            "identificator":3,
+            "status":false,
+            "titlu":"Date gresite",
+            "text": "Verificati datele",
+            "imagine":"eroare_date.png"
+        }
+    ]
+}
+  

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+
+        <title>Teodora =^_^= </title>
+        
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- va fi explicat când ajungem la CSS -->
+            <meta name="keywords" content="multidisciplinar, artist, student, studenta, matematica, informatica, unibuc, fmi, portofoliu, zine, desen, revista, magazin, scrunchie, accesoriu, resurse, proiecte"><!--cuvintele cheie ale paginii; majoritatea motoarelor de căutare ignoră keywords -->
+            <meta name="description" content="Matematica si Arta: Portofoliu multidisciplinar"><!-- descrierea paginii, adesea apare sub link când sunt afișate rezultatele căutării -->
+            <meta name="author" content="Teodora Mihai">  <!-- autorul/autoarea paginii-->  
+
+            <%-include("../fragmente/head.ejs")%>
+            
+    
+    </head>
+    <body>
+        <%-include("../fragmente/header.ejs")%>
+        
+        
+    <!--<div class="page-break"></div>-->
+    <main>
+        <div id="grid-pagina">
+            <section id="welcome">
+                <h2>Home page</h2>
+                <article>
+                    Bun venit în lumea mea <b>multidisciplinară</b>! Sunt o studentă pasionată de matematică și informatică la <b>Facultatea de Matematică și Informatică</b> din cadrul Universității din București (<abbr title="Facultatea de Matematica si Informatică Universitatea Bucuresti">FMI Unibuc</abbr>), dar și un <b>artist</b> în devenire. Aici vei găsi o combinație între lumea academică și cea artistică, unde proiectele mele personale iau viață. Explorează <b>portofoliul</b> meu de <b>proiecte</b>, descoperă <b>resurse</b> utile pentru studenți, sau bucură-te de creațiile mele artistice, de la desene și picturi la accesorii unice de păr. Fie că ești aici pentru inspirație, resurse educaționale sau pentru a cumpăra ceva special, sper să găsești ceva care să-ți placă.
+                    <button type="button" class="btn btn-primary btn-lg">Stil-1-mare</button>
+                    <blockquote>Da, exista frumusete si in matematica!<div class="imag-icon" id="calculator"><span class="fa-solid fa-calculator"></span></div></blockquote>
+
+                    <p><b>Ip: </b> <%- locals.ip %> </p>
+                    <figure>
+                        <img src="/resurse/imagini/home_page.jpg" alt="home">
+                        <picture>
+                            <!-- il ia pe primul care se potriveste cu query-ul din media-->
+                            <source srcset="resurse/imagini/eu_apus30.jpg" media="(max-width:500px)"/>
+                            <source srcset="resurse/imagini/eu_apus50.jpg" media="(max-width:1000px)"/>
+                            <img src="/resurse/imagini/eu_apus70.jpg" alt="text"/>
+                        </picture>
+                        <figcaption>Portretul meu</figcaption>
+                    </figure>
+
+                    <div>
+                <video controls="controls" style="display: block; background: black;  margin-left: auto;
+  margin-right: auto; width: 50%; min-width: 200px; max-width: 800px;" poster="/resurse/imagini/iphone_study.jpg" preload="auto">
+                        <source src="resurse/video/GreenLeafinSunlight720p.mp4" type="video/mp4">
+                        <source src="resurse/video/GreenLeafinSunlight720p.ogv" type="video/ogg"> 
+                        <track default src="resurse/video/my_captions_ro.vtt" kind="captions" srclang="ro" label="romana" />
+                        <track  src="resurse/video/my_captions_en.vtt" kind="captions" srclang="en" label="engleza" />
+                        aici sa fie video
+                    </video>
+                </div>
+
+                    
+                
+                    
+                    
+
+
+
+                </article>
+                <section id="bineativenit">
+                    <h3>
+                    Bine ai venit!
+                    </h3>
+                    <p>
+                    Fie că ești student, artist, pasionat de artă sau doar curios, sper să te inspir și să te ajut să găsești ceva valoros aici. Bucură-te de călătoria prin portofoliul meu multidisciplinar! ✨
+                    </p>
+                </section>
+                <section id="descriere">
+                    <h3>Descriere:</h3>
+                    <p>În lumea mea, formulele matematice iau viață prin desene, iar codurile de programare se transformă în accesorii unice. Bun venit într-un spațiu unde știința și arta dansează împreună!</p>
+                </section>
+
+
+            </section>
+
+            <section id="proiecte">
+                <h2>Proiecte</h2>
+                <p>Această pagină este un mic jurnal al proiectelor mele, atât din domeniul academic, cât și din cel artistic. Aici găsești resurse pe care le-am creat ca studentă la matematică și informatică: notițe organizate, formule matematice scrise într-un mod vizual atractiv, sau ghiduri utile pentru colegii mei. De asemenea, împărtășesc și proiectele mele personale: desene, picturi, reviste handmade (<i>zine</i>) și alte creații artistice. Fiecare proiect are o poveste în spate, iar eu împărtășesc cu plăcere procesul de creație și învățare.
+                </p>
+
+                Explorează:
+                <article><h3>Resurse academice:</h3> Notițe digitale, template-uri și ghiduri practice.</article>
+                <article><h3>Proiecte artistice:</h3> Desene, picturi și alte lucrări handmade.
+                </article>
+                <article><h3>Blog:</h3> Povestiri despre cum au luat naștere aceste proiecte și ce am învățat pe parcurs.
+                </article>
+
+                
+                <a href="https://github.com/teodora030" target="_blank">Catre GitHub</a>
+                <p>
+
+
+
+                </p>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Bn-Q1nV40R8?si=bGr1LXlD5QFsj6Uf" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                
+
+                    <div class="container-iframe">
+                        <div class="taburi-iframe">
+                        <a href="https://www.youtube.com/embed/LJcByh0q3Gc?si=8G8YQOm3bX1haYe5" target="ifr-video">Teoria pamantului plat</a>
+                        <a href="https://www.youtube.com/embed/4ydWU3GNA18?si=B5HHTpumbZFW6d4Q" target="ifr-video" >Asta-i casa cea frumoasa - colind la fluier tutorial</a>
+                        <a href="https://www.youtube.com/embed/Nm9Eh3ukGlY?si=OQETs7-_w6dPvahb" target="ifr-video" >Hungarian folk tales - tutorial fluier</a>
+                        </div>
+        
+                    
+                        <iframe name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/Nm9Eh3ukGlY?si=OQETs7-_w6dPvahb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+
+
+
+                
+
+                
+                <div class="behance">
+                    <iframe src="https://www.behance.net/embed/project/151801023?ilo0=1" height="316" width="404" allowfullscreen allow="clipboard-write"></iframe>
+                </div>    
+                
+
+
+
+            </section>
+
+            <section id="calendar">
+                <h2>Calendar</h2>
+                <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vero libero reprehenderit facilis sunt, voluptates non ex. Rem fuga reprehenderit possimus esse vero ipsa! Officiis non cumque obcaecati ullam? Cupiditate?</span><span>Deleniti tempora mollitia consectetur corporis voluptates, possimus id. Eius odit aperiam sed repellat voluptate voluptatibus architecto consequatur necessitatibus. Quos repellendus tempore dolores dicta sit laborum, reprehenderit facilis necessitatibus reiciendis praesentium!</span><span>Perferendis, nihil? Dolore obcaecati temporibus, aspernatur vero in ipsa amet eveniet repellat illum recusandae ipsum suscipit consequuntur minus excepturi corrupti aut voluptatibus repudiandae velit ducimus. Rerum, dolore quia? Doloribus, magnam.</span></p>
+            </section>
+
+            <section id="tabel">
+                <h2>Tabel Planul de invatamant Mate-Info anul 2</h2>
+
+            <div style="overflow-x:auto;">
+
+                <table>
+                    <caption>Ce cursuri am urmat in anul 2 la specializarea matematica-informatica</caption>
+
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Materii Mate-Info</th>
+                            <th id="sem1" colspan="2" scope="colgroup">Semestrul 1</th>
+                            <th id="sem2" colspan="2" scope="colgroup">Semestrul 2</th>
+                        </tr>
+                        <tr>
+                            <th headers="sem1">Mate</th>
+                            <th headers="sem1">Info</th>
+                            <th headers="sem2">Mate</th>
+                            <th headers="sem2">Info</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">1.</th>
+                            <td>Algebra 3</td>
+                            <td>Sisteme de Operare</td>
+                            <td>Algebra 4</td>
+                            <td>Tehnici Web</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2.</th>
+                            <td>Teoria Masurii si a Integrarii</td>
+                            <td>Object Oriented Programming</td>
+                            <td>Analiza Complexa</td>
+                            <td>Baze de date</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3.</th>
+                            <td>Ecuatii Diferentiale</td>
+                            <td>-</td>
+                            <td>Probabilitati</td>
+                            <td>Structuri de date</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4.</th>
+                            <td>Geometrie Diferentiala</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="1">In Total:</td>
+                            <td colspan="2">4 materii de mate, 2 de info</td>
+                            <td colspan="2">3 materii de mate, 3 de info</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+
+            </section>
+
+            <section id="anunturi">
+                <h2>Anunturi</h2>
+                <p><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem tenetur repellendus, animi natus error iusto ut deleniti a neque ab sint suscipit, eius rerum sit officia quisquam ipsa aut sed?</span><span>Labore, odit possimus, veniam inventore quis at nemo illum nulla fugiat autem, ea minus necessitatibus! Adipisci consequatur dicta ullam saepe rerum voluptate. Autem architecto odio sunt incidunt id. Sequi, soluta?</span></p>
+            </section>
+
+            <section id="lista_u_online">
+                <h2>Lista utilizatori online</h2>
+                <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur doloremque, iure quasi molestiae expedita officia numquam vel architecto magni, esse ex. Harum, eaque a beatae nostrum quis veniam vel obcaecati!</span><span>Quas delectus aut in magnam impedit, provident voluptate voluptates amet ipsum dolorum, esse, vero a sapiente nesciunt facere eum dolor quis ab nihil quisquam deserunt cum obcaecati! Autem, impedit dolorum.</span></p>
+            </section>
+
+            <section id="date_u_stat">
+                <h2>Date utilizatori si statistici</h2>
+                <p><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas quia consequuntur hic eligendi dolor, possimus totam quo veritatis beatae ipsa quae perspiciatis atque fugiat assumenda accusamus quam. Ipsa, molestias laboriosam.</span><span>Minus soluta alias eius ipsa rerum dolores voluptas quo accusantium labore quos! Dolore voluptas impedit libero aliquam neque dolor pariatur sequi asperiores culpa numquam repellat perspiciatis tenetur, veniam, laudantium odio.</span></p>
+            </section>
+
+            <section id="date_site">
+                <h2>Date despre site</h2>
+                <p><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem sunt nihil doloribus aperiam odio velit modi minus animi, sed magni magnam architecto unde quam cumque praesentium provident illo fugiat sint.</span><span>Sunt, quod tempora voluptatibus in repudiandae porro molestiae amet id harum velit doloribus! Sequi corporis porro animi facere provident officia, iure amet reprehenderit possimus. Quaerat tempora fugiat voluptatum hic illum.</span><span>Rerum officiis ratione voluptate iure labore sint eaque voluptates ipsum accusamus delectus. Rem animi facilis non obcaecati recusandae itaque molestias? Aperiam at numquam rerum qui in, nulla libero harum autem?</span><span>Blanditiis repellat numquam soluta asperiores aut iste fugit eaque voluptatem dolores ad dolorum itaque pariatur consequuntur aspernatur quaerat autem, tempora corporis, animi veritatis ex quam beatae? Sunt cum placeat illum.</span></p>
+            </section>
+
+        </div>
+
+        <section id="magazin">
+            <h2>Magazin</h2>
+            <p>Bine ai venit în magazinul meu online, un colț special unde artă și utilitate se întâlnesc! Aici poți găsi o varietate de articole handmade, precum <i>scrunchie-uri</i> unice, desene și picturi, dar și resurse digitale utile, cum ar fi <i>template-uri</i> pentru notițe sau ghiduri practice pentru studenți. Fiecare produs este creat cu pasiune și atenție la detalii, iar eu sper să-ți aducă un zâmbet pe buze sau să te ajute în drumul tău academic.
+            </p>
+
+            <aside>👉 Cum funcționează:
+
+                Explorează: Folosește filtrele pentru a găsi exact ce cauți.
+                
+                Comandă: Adaugă produsele în coș și completează formularul de comandă.
+                
+                Livrare: Detaliile despre livrare și plată vor fi comunicate după plasarea comenzii.
+            </aside>
+
+            <ul>
+                <li>Elastice de par</li>
+                <li>Desene, print-uri</li>
+                <li>Notite de la cursuri, foi cu formule</li>
+
+
+
+            </ul>
+
+            <div class="container-image-map">
+            <figure>
+                <picture>
+                    <img src="/resurse/imagini/math-map50.jpg" usemap="#image-map" srcset="resurse/imagini/math-map50.jpg"  alt="harta matematicii">
+                    <figcaption>Harta interactiva a matematicii. Va fi completata in timp ce completez si notitele de curs.</figcaption>
+                </picture>
+            </figure>
+            </div>
+
+            <map name="image-map">
+                <area target="_self" alt="Measure Theory" title="Measure Theory" href="#TMI" coords="92,295,23" shape="circle">
+                <area target="_self" alt="Complex Analysis" title="Complex Analysis" href="#AC" coords="370,71,20" shape="circle">
+                <area target="_self" alt="Probability" title="Probability" href="#PROB" coords="180,350,226,397" shape="rect">
+                <area target="_self" alt="Lorem" title="Lorem" href="#ACC" coords="663,91,580,8" shape="rect">
+            </map>
+
+
+
+
+            <dl><dt>Notite de la cursuri</dt><dd>Teoria masurii si a integrarii, Algebra 3, Analiza complexa</dd></dl>
+            <section id="ACC">
+
+
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi impedit autem dicta mollitia omnis! Voluptates vero, error vitae inventore eaque ipsa explicabo laborum doloremque velit. Ipsa repudiandae quia nam sint?</P>
+
+
+            </section>
+
+            <h2>Despre cursurile de matematica:</h2>
+            <details>
+                <summary><a id="TMI">Teoria Masurii si a Integrarii</a></summary>
+                <p>
+                    Acest curs introduce noțiuni fundamentale din analiza matematică avansată, concentrându-se pe măsura și integrala în sens abstract. Studenții vor explora spații măsurabile, funcții măsurabile și măsuri pozitive, cu accent pe măsura Lebesgue pe ℝⁿ. Vor învăța să construiască și să utilizeze integrala Lebesgue, comparând-o cu integrala Riemann și evidențiind avantaje precum teoremele de convergență (Levi, Fatou, Lebesgue). De asemenea, vor aborda spații Lᵖ, teorema Radon-Nikodym și măsuri cu semn, cu aplicații în analiză, probabilități și fizică. Cursul combină rigoarea teoretică cu exemple practice, pregătind studenții pentru cercetare sau studii avansate.
+                </p>
+
+            </details>
+
+            <details>
+                <summary><a id="AC">Analiza complexa</a></summary>
+                <p>Acest curs explorează funcțiile complexe diferențiabile (holomorfe) și proprietățile lor fundamentale. Studenții vor studia ecuațiile Cauchy-Riemann, integrala complexă (teorema lui Cauchy, formula integrală a lui Cauchy) și seriile Taylor și Laurent. Vor învăța despre singularități (poli, puncte esențiale) și teorema reziduurilor, cu aplicații în calculul integralelor reale. De asemenea, vor aborda transformări conforme și principiul maximului, relevante în fizică și inginerie. Cursul combină teoria riguroasă cu exemple practice, oferind o bază solidă pentru studiile avansate.</p>
+
+            </details>
+
+            <details>
+                <summary><a id="PROB">Probabilitati</a></summary>
+                <p>Acest curs introduce conceptele de bază ale teoriei probabilităților, cu accent pe spații de probabilitate, variabile aleatoare (discrete și continue) și distribuții clasice (binomială, Poisson, normală etc.). Studenții vor învăța să calculeze speranța matematică, varianța și covarianța, precum și să aplice inegalități importante (Markov, Cebîșev). Vor explora teoremele limită (legea numerelor mari, teorema limită centrală) și procese stochastice simple (lanțuri Markov). Cursul are aplicații în statistică, finanțe și știința datelor, echipând studenții cu instrumente pentru modelarea aleatoriei.</p>
+            </details>
+
+            <a href="/resurse/pdf/formule_tmi.pdf" download="formule_teoria_masurii.pdf" target="_blank">Formule Teoria masurii si a integrarii Download</a>
+
+            <article>
+                <h2>De ce aria unui patrulater ortodiagonal este produsul diagonalelor impartit la 2?</h2>
+
+                <p>Formula pentru aria unui romb folosind diagonalele ne este foarte cunoscuta. Dar aceasta formula se poate aplica pentru orice patrulater ce are diagonalele perpendiculare.</p>
+                
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mtext>Formula:</mtext>
+                    <mspace width="0.5em" />
+                    <mfrac>
+                        <mrow>
+                            <msub><mi>d</mi><mn>1</mn></msub>
+                            <mo>&#x22C5;</mo>
+                            <msub><mi>d</mi><mn>2</mn></msub>
+                        </mrow>
+                        <mn>2</mn>
+
+                    </mfrac>
+                </math>
+
+                <p> Demonstratia o aveti scrisa in pdf-ul de mai jos.</p>
+               
+
+                <embed src="/resurse/pdf/patrulater-ortodiagonal-dem.pdf" width="500" height="375" type="application/pdf">
+                
+
+
+
+            </article>
+
+
+        </section>
+
+        <%-include("../fragmente/galerie-fragment.ejs")%>
+    </main>
+
+    <div class="page-break"></div>
+    <%-include("../fragmente/footer.ejs")%>
+
+        
+
+    </body>
+
+</html>

@@ -1,0 +1,229 @@
+{     
+    "cale_galerie":"resurse/imagini/galerie",
+    "imagini": [
+        {
+        "fisier_imagine":"avion.jpg",
+        "nume_poza":"Selfie in avion",
+        "continut_alternativ":"Poza in oglinda din avion", 
+        "descriere_poza":"In drum spre Vienna",
+        "intervale_zile":[["luni", "marti"],["vineri","vineri"]]
+        },
+        {
+        "fisier_imagine":"bogdan.jpg",
+        "nume_poza":"Concert Bogdan Simion",
+        "continut_alternativ":"Concert - Lautarii de Matase la sala palatului", 
+        "descriere_poza":"Concert - Simion Bogdan cu Lautarii de Matase la sala palatului",
+        "intervale_zile":[["miercuri","joi"],["sambata","sambata"]]
+        },
+        {
+        "fisier_imagine":"caldura-mare.jpg",
+        "nume_poza":"Caldura Mare la FMI",
+        "continut_alternativ":"Portret din iulie 2024 la pregatirea pentru examen", 
+        "descriere_poza":"Portret din iulie 2024 la pregatirea pentru examenul de algebra",
+        "intervale_zile":[["luni", "miercuri"],["duminica","duminica"]]
+        },
+        {
+        "fisier_imagine":"candlelight.jpg",
+        "nume_poza":"Bridgerton Candlelight Concert",
+        "continut_alternativ":"Portret la concertul Bridgerton Candlelight", 
+        "descriere_poza":"Portret la concertul Bridgerton Candlelight, organizat de cvartetul Dinamis",
+        "intervale_zile":[["miercuri","joi"],["sambata","sambata"]]
+        },
+        {
+        "fisier_imagine":"catto.jpg",
+        "nume_poza":"Caciula cu urechi de pisica",
+        "continut_alternativ":"Caciula cu urechi de pisica", 
+        "descriere_poza":"Caciula cu urechi de pisica",
+        "intervale_zile":[["luni", "miercuri"],["sambata","sambata"]]
+        },
+        {
+        "fisier_imagine":"chei.jpg",
+        "nume_poza":"Natura statica",
+        "continut_alternativ":"Floare galbena", 
+        "descriere_poza":"Natura la cheile Dobrogei",
+        "intervale_zile":[["luni", "miercuri"],["sambata","duminica"]]
+        },
+        {
+        "fisier_imagine":"cismigiu.jpg",
+        "nume_poza":"In Parcul Cismigiu",
+        "continut_alternativ":"Parcul Cismigiu", 
+        "descriere_poza":"In cautarea zonei de calisthenics",
+        "intervale_zile":[["luni", "miercuri"],["sambata","duminica"]]
+        },
+        {
+        "fisier_imagine":"dobrogea.jpg",
+        "nume_poza":"Portret in Dobrogea",
+        "continut_alternativ":"Portret cu mult soare", 
+        "descriere_poza":"Bate soarele rau in Dobrogea (si vantul)",
+        "intervale_zile":[["luni", "miercuri"],["sambata","duminica"]]
+        },
+        {
+        "fisier_imagine":"elena.jpg",
+        "nume_poza":"In Parcul Herastrau",
+        "continut_alternativ":"Portret cu soare", 
+        "descriere_poza":"With my bestiessss",
+        "intervale_zile":[["luni", "miercuri"],["sambata","duminica"]]
+        },
+        {
+        "fisier_imagine":"enschede.jpg",
+        "nume_poza":"Enschede Straat",
+        "continut_alternativ":"Strada din Enschede", 
+        "descriere_poza":"Am fost cu Adi sa isi coasa arm-wrestling belts si era privelistea frumoasa",
+        "intervale_zile":[["luni", "miercuri"],["sambata","sambata"]]
+        },
+        {
+        "fisier_imagine":"faiar.jpg",
+        "nume_poza":"Poza cu Silviu Faiar",
+        "continut_alternativ":"Portret cu Silviu Faiar", 
+        "descriere_poza":"Strans de semnaturi pentru Nicu Stefanuta",
+        "intervale_zile":[["luni", "miercuri"],["sambata","sambata"]]
+        },
+        {
+        "fisier_imagine":"giulia.jpg",
+        "nume_poza":"Press-on nails",
+        "continut_alternativ":"Giulia purtand unghii press-on", 
+        "descriere_poza":"In metrou, cu o tinuta impecabila, am capturat unghiile superbe ale Giuliei",
+        "intervale_zile":[["luni", "miercuri"],["sambata","sambata"]]
+        },
+        {
+        "fisier_imagine":"ior.jpg",
+        "nume_poza":"Portret Asia Fest",
+        "continut_alternativ":"Portret in parcul IOR", 
+        "descriere_poza":"Portret in parc, in spate sunt copaci si iarba verde",
+        "intervale_zile":[["luni", "miercuri"],["sambata","duminica"]]
+        },
+        {
+        "fisier_imagine":"lilly.jpg",
+        "nume_poza":"Nuferi",
+        "continut_alternativ":"Terrariu cu apa si nuferi", 
+        "descriere_poza":"Terrariu cu apa si nuferi intr-un parc din Vienna",
+        "intervale_zile":[["marti", "miercuri"],["vineri","vineri"]]
+        },
+        {
+        "fisier_imagine":"limmerance.jpg",
+        "nume_poza":"Poza in balta",
+        "continut_alternativ":"Reflectie in balta", 
+        "descriere_poza":"Reflectia mea in balta, se vad cateva frunze de toamna si cizmele mele",
+        "intervale_zile":[["luni", "miercuri"],["sambata","sambata"]]
+        },
+        {
+        "fisier_imagine":"makeup.jpg",
+        "nume_poza":"Poza in oglinda",
+        "continut_alternativ":"Pregatire pentru Bridgerton", 
+        "descriere_poza":"Poza in oglinda cu machiaje",
+        "intervale_zile":[["miercuri","joi"],["sambata","sambata"]]
+        },
+        {
+        "fisier_imagine":"mamaie.jpg",
+        "nume_poza":"Mamaie si Tati",
+        "continut_alternativ":"Ne uitam la cursa", 
+        "descriere_poza":"Acasa la mamaie, impreuna cu ea si cu tata, ne uitam la cursa verisorului meu",
+        "intervale_zile":[["marti", "miercuri"],["vineri","vineri"]]
+        },
+        {
+        "fisier_imagine":"munte.jpg",
+        "nume_poza":"Muntele din Treffen",
+        "continut_alternativ":"Admirand natura", 
+        "descriere_poza":"Selfie cu privelistea minunata de munte",
+        "intervale_zile":[["marti", "miercuri"],["vineri","vineri"]]
+        },
+        {
+        "fisier_imagine":"nat.jpg",
+        "nume_poza":"In Parcul National",
+        "continut_alternativ":"Parcul National", 
+        "descriere_poza":"Selfie de 1 mai 2024, am mancat mici pe banca",
+        "intervale_zile":[["luni", "miercuri"],["sambata","duminica"]]
+        },
+        {
+        "fisier_imagine":"ochelari.jpg",
+        "nume_poza":"Flying Tiger Wien",
+        "continut_alternativ":"Ochelarist printre ochelari", 
+        "descriere_poza":"Selfie cu minunatia de magazin",
+        "intervale_zile":[["marti", "miercuri"],["vineri","vineri"]]
+        },
+        {
+        "fisier_imagine":"secret.jpg",
+        "nume_poza":"Scena9",
+        "continut_alternativ":"Portret cu waporwave", 
+        "descriere_poza":"Admirand jocul cu waporwave de la unarte",
+        "intervale_zile":[["miercuri","joi"],["sambata","sambata"]]
+        },
+        {
+        "fisier_imagine":"snow.jpg",
+        "nume_poza":"Xiao windbreaker",
+        "continut_alternativ":"Portret cu geaca Xiao", 
+        "descriere_poza":"Am facut poza in scara blocului si am schimbat fundalul. ian 2024...",
+        "intervale_zile":[["luni", "miercuri"],["sambata","sambata"]]
+        },
+        {
+        "fisier_imagine":"tramvai.jpg",
+        "nume_poza":"Noua tunsoare",
+        "continut_alternativ":"Portret in tramvai", 
+        "descriere_poza":"Abia m-am tuns",
+        "intervale_zile":[["luni", "miercuri"],["sambata","sambata"]]
+        },
+        {
+        "fisier_imagine":"tren.jpg",
+        "nume_poza":"Slaying catre mamaie",
+        "continut_alternativ":"Portret in tren", 
+        "descriere_poza":"Iubesc sa merg cu trenul",
+        "intervale_zile":[["luni", "miercuri"],["sambata","sambata"]]
+        },
+        {
+        "fisier_imagine":"uni.jpg",
+        "nume_poza":"Universitatea Bucuresti",
+        "continut_alternativ":"Parthenonul cladirii UniBuc", 
+        "descriere_poza":"MateInfoUB,Bucuresti,FMI,Unibuc,inainte de renovare",
+        "intervale_zile":[["luni", "miercuri"],["sambata","sambata"]]
+        },
+        {
+        "fisier_imagine":"uniqlo.jpg",
+        "nume_poza":"Feeling Myself",
+        "continut_alternativ":"La plimbare", 
+        "descriere_poza":"Purtam palarie, ochelari, si cel mai smecher outfit ever.",
+        "intervale_zile":[["luni", "miercuri"],["sambata","sambata"]]
+        },
+        {
+        "fisier_imagine":"uwu.jpg",
+        "nume_poza":"Uscator",
+        "continut_alternativ":"Poza in uscatorul de maini de la FMI", 
+        "descriere_poza":"baie,MateInfoUB,Bucuresti,FMI,Unibuc,inainte de renovare",
+        "intervale_zile":[["luni", "miercuri"],["sambata","sambata"]]
+        },
+        {
+        "fisier_imagine":"vic.jpg",
+        "nume_poza":"Concert Vic de Angelis",
+        "continut_alternativ":"Portret la concertul Vic de Angelis", 
+        "descriere_poza":"Iubesc sa merg la petrecere",
+        "intervale_zile":[["miercuri","joi"],["sambata","sambata"]]
+        },
+        {
+        "fisier_imagine":"yummy.jpg",
+        "nume_poza":"Casa Vietnam",
+        "continut_alternativ":"Eu si Daria la Casa Vietnam", 
+        "descriere_poza":"Iubesc sa mananc mancare vietnameza",
+        "intervale_zile":[["luni", "miercuri"],["sambata","sambata"]]
+        },
+        {
+            "fisier_imagine":"europeana450.jpg",
+            "nume_poza":"Evantai",
+            "continut_alternativ":"Evantai muzeu",
+            "descriere_poza":"Un evantai superb, negru, nemaintalnit, cu detalii si desene albe",
+            "intervale_zile":[["duminica","sambata"]],
+            "cc_by":"Vějíř by J. Vaněk - Náprstek Museum of Asian, African and American Cultures, Czech Republic - CC BY."
+        },
+        {
+            "fisier_imagine":"europeana4501.jpg",
+            "nume_poza":"Evantai",
+            "continut_alternativ":"Evantai muzeu",
+            "descriere_poza":"Un evantai superb, negru, nemaintalnit, cu detalii si desene albe",
+            "intervale_zile":[["duminica","sambata"]],
+            "cc_by":"Vějíř by J. Vaněk - Náprstek Museum of Asian, African and American Cultures, Czech Republic - CC BY."
+        }
+        
+        
+    
+    ]
+
+}
+

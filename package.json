@@ -1,0 +1,28 @@
+{
+  "name": "proiect-tehnici-web",
+  "version": "1.0.0",
+  "description": "Teodora Mihai - Portofoliu Multidisciplinar",
+  "keywords": [
+    "matematica",
+    "informatica",
+    "art",
+    "accesorii",
+    "notite",
+    "proiecte",
+    "portofoliu",
+    "multidisciplinar",
+    "facultate"
+  ],
+  "license": "ISC",
+  "author": "Teodora Mihai",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.6",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}

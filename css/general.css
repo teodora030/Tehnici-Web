@@ -1,0 +1,822 @@
+@import "galerie_statica.css";
+
+
+
+html{
+    font-size:18px;
+    /*--unde se modifica??*/
+    transition: font-size 0.3s ease;
+    --grid-gap-large: 20px;    /* Spațiere mare (ecran desktop) */
+    --grid-gap-medium: 15px;   /* Spațiere medie (ecran 1200px sau mai mic) */
+    --grid-gap-small: 10px;    /* Spațiere mică (ecran 800px sau mai mic) */
+}
+body{
+    --spatiere-pagina:50px;/*intre border si margine*/
+    font-size: 1rem;
+     /* Culori de bază */
+     --color-primary: #4e8100;     /* Verde principal */
+     --color-secondary: #548;  /* mov */
+     --color-neutral: #eee3d3;    /* Bej fundal */
+     --color-accent1: #e7c6ec;    /* Roz-lavandă */
+     --color-accent2: #4eb4bb;    /* turquoise */
+     --color-verde-deschis: #acd473;
+     --color-roz-pal: #ffe6f8;
+     --color-crem-2: #e0d0b8;
+     --color-bleu: #99e2e7; 
+
+    --color-visited: #008607; /* Violet pentru linkurile vizitate */
+    --color-external: #2196f3; /* Albastru pentru linkurile externe */
+    --color-hover: #ff5722; /* Portocaliu pentru hover */
+    --color-active: #ff00f2; /* roz pentru active ce inseamna active? */
+
+
+
+ 
+     /* Culori funcționale */
+     --bg-body: var(--color-neutral);
+     --text-primary: #333;        /* Text întunecat */
+     --text-secondary: #555;  
+     --border-light: var(--color-secondary);
+     --button-primary: var(--color-primary);
+     --button-hover: var(--color-accent1);
+    background-color: var(--bg-body);
+    font-family: "Merriweather", sans-serif;
+
+}
+
+/* Stiluri generale pentru linkuri Etapa 4 stilizare link-uri*/
+        a {
+            color: inherit;/*?? de unde*/
+            text-decoration: none;
+            position: relative;
+            transition: all 0.3s ease;
+            padding: 2px 4px;
+        }
+
+        /* Linkuri vizitate */
+        a:visited {
+            color: var(--color-visited);
+        }
+
+        /* Linkuri externe (cu atribut href care începe cu http) */
+        a[href^="http"]::before {
+            content: "⮳";
+            font-size: 2em;
+            margin-right: 4px;
+            color: var(--color-external);
+            transition: color 0.3s ease;
+        }
+
+        /* Hover pe linkuri externe - schimbă culoarea simbolului */
+        a[href^="http"]:hover::before {
+            color: var(--color-hover);
+        }
+
+        /* Efect hover pentru linkuri din conținut (main) */
+        main a {
+            background-image: radial-gradient(
+                circle,
+                var(--color-accent2) 0%,
+                var(--color-accent2) 40%,
+                transparent 80%,
+                transparent 100%
+            );
+            background-position: center;
+            background-size: 0;
+            background-repeat: no-repeat;
+            transition: background-size 1s ease;
+        }
+
+        main a:hover {
+            background-size: 100%;
+        }
+
+        /* Efect active (la click) */
+        a:active {
+            border: 2px solid var(--text-primary);
+            /* border-radius: 4px; */
+        }
+
+h1{
+    /*font-family: "Special Gothic Expanded One", sans-serif;*/
+    font-family: "Playfair Display", sans-serif !important;
+}
+
+h2{
+    font-size: 1.4em;
+    color: var(--color-primary);
+}
+h3{
+    font-size: 1.2em;
+    color:var(--color-secondary);
+}
+header {
+    border-radius: 20px 0 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Umbră mai intensă */
+}
+
+footer {
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Umbră inversată (în sus) */
+}
+/*LINK TOP----------------------------------------------------------------*/
+
+#link-top{
+   position:fixed;
+   bottom: 1em;
+   right:5em;
+   opacity:0.5;
+   width: 5rem;
+   height: 5rem;
+   box-sizing: border-box;
+   line-height: 5rem;
+   text-align: center;
+
+   align-items: center;
+   display: flex;
+   align-items: center; 
+   justify-content: center;
+   transition: all 0.5s ease;
+
+
+}
+
+#link-top:hover{
+    opacity: 1;
+
+}
+
+#sageata{
+    position: absolute;
+    font-size: 5rem;
+    color:#333;
+    /*border:5px solid #4e8100;*/
+    width: 100%;
+    height:100%;
+    border-radius:50%;
+    z-index: 1;
+    margin-top: 15%;
+
+
+
+}
+
+#circle{
+    position:absolute;
+    width: 100%;
+    height:100%;
+    border-radius:50%;
+    outline: 5px  dashed grey;
+    background: radial-gradient(circle at center,rgb(213, 200, 255),#8f0066);
+    transition: transform 0.5s ease;
+
+}
+
+
+
+#link-top:hover #circle{
+    transform: rotate(90deg);
+}
+
+#link-top:hover #sageata{
+    animation: sus-jos 0.5s ease;
+}
+@keyframes sus-jos {
+    0%{transform:translateY(0px);}
+    50%{transform:translateY(-5px);}
+    100%{transform:translateY(0px);}
+}
+
+
+
+/*----------------------------------------------------------------------------*/
+iframe{
+    max-width: 50%;
+    height:auto;
+    aspect-ratio: 16/9;
+
+}
+
+.behance iframe{
+    max-width: 70%;
+    height:auto;
+    aspect-ratio: 4/3;
+    min-width: 40%;
+}
+
+embed{
+    max-width: 70%;
+    height:auto;
+    aspect-ratio: 6/5;
+    min-width: 40%;
+}
+
+figure{
+    width:50%;
+    display: block;
+    margin: 0 auto;
+}
+
+img,picture{
+    max-width: 100%;
+}
+
+video::cue {
+    background-color: rgba(72, 0, 114, 0.9) !important; /* Fundal gri închis */
+    color: white !important;
+    font-size: 16px;
+    text-align: left;
+}
+
+video::cue(b) {
+    font-weight: bold; /* Text bold în subtitrări */
+}
+
+#grid-pagina{
+    display:grid;
+    transition: grid-gap 0.3s ease-in-out;
+    grid-template-areas: "welcome welcome welcome welcome"
+                        "proiecte proiecte proiecte proiecte"
+                        "calendar tabel tabel anunturi"
+                        "lista_u_online date_u_stat date_site date_site";
+                        /* "magazin magazin magazin magazin"
+                        "galerie-statica galerie-statica galerie-statica galerie-statica"; */
+    grid-gap: var(--grid-gap-large);
+    
+
+}
+
+#grid-pagina > *{
+    outline: 3px solid var(--color-accent2);
+    padding: 7px;/*intre text si border*/
+    border-radius: 10px;
+    box-shadow: 
+    inset 0 0 10px rgba(31, 240, 255, 0.466),
+    2px 2px 10px rgba(0,0,0,0.7);
+
+}
+
+#grid-pagina > figure{
+    margin:0;
+}
+
+main{
+    padding-left: var(--spatiere-pagina);
+    padding-right: var(--spatiere-pagina);
+}
+
+#welcome{
+    grid-area: welcome;
+    background-color: var(--color-crem-2);
+}
+#proiecte{
+    grid-area: proiecte;
+}
+#calendar{
+    grid-area: calendar;
+    background-color: var(--color-roz-pal);
+}
+#tabel{
+    grid-area: tabel;
+    border: 4px dashed var(--color-accent2);
+    overflow-x: auto;/*nu apare scroll pe ecranul mic??*/
+    
+
+}
+
+#anunturi{
+    grid-area: anunturi;
+    background-color: var(--color-verde-deschis);
+}
+
+#lista_u_online{
+    grid-area: lista_u_online;
+    background-color: var(--color-bleu);
+}
+#date_u_stat{
+    grid-area: date_u_stat;
+    background-color: var(--color-bleu);
+}
+#date_site{
+    grid-area: date_site;
+    background-color: var(--color-bleu);
+}
+
+/* #galerie-statica{
+    
+
+    display:grid;
+    transition: grid-gap 0.3s ease-in-out;
+    grid-template-areas: 
+                        "galerie-statica galerie-statica galerie-statica galerie-statica"; 
+    grid-gap: var(--grid-gap-large);
+} */
+
+/* #magazin{
+    grid-area: magazin;
+    background-color: var(--color-primary);
+} */
+
+/* #fig1{
+    grid-area: fig1;
+}
+#fig2{
+    grid-area: fig2;
+}
+#fig3{
+    grid-area: fig3;
+}
+#produse{
+    grid-area: produse;
+}
+#index-intrebari{
+    grid-area: index-intrebari;
+} */
+
+figcaption{
+    text-align:center;
+}
+/*
+/*STILIZARE TAB-URI AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
+.taburi-iframe {
+    display: flex;                  
+    gap: 10px;                     
+    /*padding: 10px;                 /* Padding interior */
+    /*background: #f5f5f5;    */       /* Fundal deschis */
+    border-radius: 8px 8px 0 0; 
+    /*overflow-x: auto;              /* Permite scroll orizontal pe mobile */
+    flex-direction: column;
+    /*justify-content: center;*/ /*unde sa puna butoanele fata de video*/
+    left:-90px;
+    top:50%;
+    
+}
+
+
+/* Stilizare de baza pentru butoanele-tab */
+.taburi-iframe a {
+    display: block;
+    width: 120px;
+    height: 80px;
+    box-sizing: border-box;
+    text-align: right;
+    line-height: 25px; 
+    
+    color:var(--text-primary);
+    font-size: 13px;
+
+    background-color: var(--color-roz-pal);
+    border: 2px dotted var(--color-accent1);
+    border-radius: 8px;
+    
+    transition: all 0.5s ease;
+    cursor: pointer;
+    
+}
+
+/* Stil pentru butonul activ */
+.taburi-iframe a.active {
+    
+    color: var(--color-bleu);
+    border-color: var(--color-accent2);
+    
+}
+
+/* Efecte la hover */
+.taburi-iframe a:hover:not(.active) {
+    
+    border-color: var(--color-secondary);
+    transform: translateX(5px);
+}
+
+/*Stil pentru focus (accesibilitate) */
+.taburi-iframe a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--color-secondary);
+}
+
+.taburi-iframe a::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%; /* Incepe din dreapta butonului */
+    width: 0;
+    height: 100%;
+    
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.taburi-iframe a:hover::after{
+    width:20px;
+    left:0;
+}
+
+.container-iframe{
+    width: 100%;
+    /*max-width: 1000px;*/
+    min-width: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: visible;
+    
+}
+.container-iframe>iframe{
+    width:100%;
+}
+/*STILIZARE TABURI ENDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD*/
+
+
+
+
+/*Tabellllllllllllllllllllllllllllllllllllllllllllllllllllll*/
+table{
+    border-collapse: collapse;
+    width: auto;
+    min-width: 100%;
+    caption-side: bottom;
+    margin-bottom: 1em;
+}
+td,th{
+    text-align: center;
+    border: 1px solid;
+    background-color: transparent;
+    transition: all 0.75s ease;
+
+}
+td{
+    height:50px;/*????????nu arata bine dar nuj ce sa ii fac, pe ecran mediu arata naspa*/
+}
+thead{
+    border: 2px solid;
+}
+
+tbody tr {
+    transition: background-color 0.75s ease, box-shadow 0.75s ease; /* Tranziție pentru întregul rând */
+}
+
+tbody tr:nth-child(odd){
+    box-shadow: 0 4px 8px var(--color-accent1);
+}
+
+tbody tr:nth-child(even){
+    box-shadow: 0 4px 8px var(--color-verde-deschis);
+}
+
+
+tr:hover{
+    background-color: var(--color-bleu);
+}
+
+tr:hover td{
+    font-size: 1.2em;
+    transition: all 0.75s ease;
+
+}
+
+
+
+
+@media screen and (max-width:1200px){
+/*--ecran mediu*/
+    html{
+        font-size:16px;
+    }
+
+    body{
+        --spatiere-pagina:35px;
+    }
+
+    #grid-pagina{
+        grid-gap: var(--grid-gap-medium);
+        transition: grid-gap 0.3s ease-in-out;
+        grid-template-areas: "welcome welcome"
+                            "proiecte proiecte"
+                            "calendar anunturi"
+                            "tabel tabel"
+                            "lista_u_online date_u_stat"
+                            "date_site date_site";
+    
+    }
+
+    embed{
+        max-width: 100%;
+        height:auto;
+        aspect-ratio: 6/5;
+        min-width: 40%;
+    }
+
+    iframe{
+        max-width: 95%;
+        height:auto;
+        aspect-ratio: 16/9;
+    
+    }
+    
+    .behance iframe{
+        max-width: 80%;
+        height:auto;
+        aspect-ratio: 4/3;
+        min-width: 40%;
+    }
+    
+    img,picture{
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    figure{
+        width:50%;
+        /* display: block; */
+        margin: 0 auto;
+    }
+    td{
+        max-width: 200px;/*perfect*/
+        /*min-width: 180px;*/
+    }
+    #tabel {
+        overflow-x: auto; /* Asigură scrollbar pe ecrane medii */
+    }
+
+    
+}
+
+
+
+
+
+
+@media screen and (max-width:800px){
+/*--ecran mic*/
+    html{
+        font-size:14px;
+        transition: none;
+        animation:none !important; /*ce e !important! -> schimba prioritatile*/
+    }
+    body{
+        --spatiere-pagina:20px;
+    }
+    
+    #grid-pagina{
+        grid-gap:var(--grid-gap-small);
+        
+        grid-template-areas: "welcome"
+                            "proiecte"
+                            "calendar"
+                            "anunturi"
+                            "tabel"
+                            "lista_u_online"
+                            "date_u_stat"
+                            "date_site";
+    
+    }
+
+    embed{
+        max-width: 100%;
+        height:auto;
+        aspect-ratio: 6/5;
+        min-width: 40%;
+    }
+
+    iframe{
+        max-width: 95%;
+        height:auto;
+        aspect-ratio: 16/9;
+    
+    }
+    
+    .behance iframe{
+        max-width: 80%;
+        height:auto;
+        aspect-ratio: 4/3;
+        min-width: 40%;
+    }
+    
+    img,figure,picture{
+        max-width: 100%;
+    }
+
+    #tabel {
+        overflow-x: auto; /* Asigură scrollbar pe ecrane medii */
+    }
+    td{
+        min-width: 120px;
+    }
+
+    }
+
+
+    /*stil-printare*/
+
+#watermark,#absolut{
+    display: none;
+}
+
+@media print{
+
+#absolut{
+    position:absolute;
+    display: inline-block;
+    top:50px; 
+    width: 50%;
+    height:20px;;
+    right:0;
+    overflow: visible; 
+    border:5px double black;
+
+}
+
+#absolut::after{
+    content:"Acesta este un proiect scolar.";
+    position:absolute;
+    font-size: 10px;
+    right:0;
+	/* border:5px double black; */
+	display: inline-block;
+
+}
+ 
+h1{
+    page-break-after: avoid;
+    margin-top: 50%; /*ce face*/
+    text-align:center;
+    margin-left:1cm;
+}
+
+/* nav.meniu {
+    list-style-type: disc;
+    margin:20px auto;
+    padding:0;
+    width: fit-content;
+}
+
+.meniu li{
+    margin-left: 20px;
+}
+
+.meniu ul li a{
+    list-style-type: circle;
+    margin-left: 20px;
+} */
+
+
+    /* ul.meniu, ul.meniu ul {
+        display: block !important;
+        opacity: 1;
+    }
+    
+    ul.meniu li {
+        display: list-item !important;
+        list-style-type: disc !important;
+    }
+    
+    ul.meniu ul li {
+        list-style-type: circle !important;
+    }
+
+    ul.meniu li:hover ul{
+        display:list-item;
+        list-style-type: disc;
+    }
+    
+    #hamburger, #ch-menu {
+        display: none !important;
+    } */
+
+
+        /* Afișează toate submeniurile */
+        ul.meniu ul {
+            display: block !important;
+            opacity: 1 !important;
+            transform: none !important;
+            animation: none !important;
+            position: static !important;
+            background-color: transparent !important;
+        }
+        
+        /* Ascunde hamburger menu */
+        #hamburger, #ch-menu {
+            display: none !important;
+        }
+        
+        /* Stiluri pentru listă la printare */
+        ul.meniu {
+            display: block !important;
+            height: auto !important;
+            line-height: 0.5em;
+        }
+        
+        ul.meniu li {
+            display: list-item !important;
+            width: auto !important;
+            height: auto !important;
+            border: none !important;
+            text-align: left !important;
+            line-height:70% !important;
+            padding: 5px 0 !important;
+            list-style-type: square !important;
+            
+        }
+        
+        ul.meniu > li {
+            margin-bottom: 10px;
+        }
+        
+        ul.meniu ul li {
+            padding-left: 20px !important;
+            list-style-type: circle !important;
+        }
+        
+        /* Asigură-te că link-urile sunt vizibile */
+        ul.meniu a, ul.meniu div {
+            color: #000 !important;
+            text-decoration: underline !important;
+        }
+        
+        /* Ascunde iconițele */
+        .imag-icon {
+            display: none !important;
+        }
+    
+
+.page-break{
+    page-break-before:always;
+}
+
+#grid-pagina{
+    font-size: 10px;
+    box-sizing:border-box;
+    page-break-before:always;
+    background-color: white;
+    display:block;
+}
+
+html, body {
+    width: 210mm;
+    overflow:visible !important;
+}
+
+#watermark
+		{
+			display: block;
+			position: fixed;/*apare pe toate paginile*/
+			color:rgba(0,0,0,0.3);
+            text-align: center;
+            width:60%;
+            height:10%;
+            top:0;
+            left:50%;
+            transform:translateX(-50%);
+            
+
+}
+
+#watermark::after{
+			
+			opacity:0.3;
+			padding:5px;
+			display: block;
+			background: white;
+			border:2px solid black;
+            border-radius: 10px;
+			content:"Mihai\ATeodora";
+            white-space: pre;
+}
+
+#link-top{
+    display: none;
+}
+
+figure,picture,iframe{
+    display:none;
+}
+
+.container-iframe{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color:#333;
+}
+
+}
+
+
+@page {
+    size: A4 portrait;
+    margin-bottom:2cm;
+    margin-top:2cm;
+    counter-increment: page;
+        
+}
+@page:left{
+
+    margin-left:2cm;
+    margin-right:1cm;
+    border-radius: 20cm;
+}
+@page:right{
+
+    margin-right:2cm;
+    margin-left:1cm;
+}

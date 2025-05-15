@@ -1,0 +1,87 @@
+#galerie-statica{
+  padding-left:var(--padding-intern);
+  padding-right:var(--padding-intern);
+}
+
+#grid-galerie {
+ display:grid;
+ grid-template-columns: repeat(3,minmax(0,1fr));
+ grid-row-gap:0.5em;
+ grid-column-gap:0.5em;
+ counter-reset: nrimag 0;  /* ce face */
+ width: 100%;
+
+ /*deci nu merge cu grid-area-template hmmmmm oare pt ca era un singur rand?*/
+}
+#grid-galerie img{
+  width: 100%;
+}
+
+#grid-galerie figure{
+  margin:0;
+  width: 100%;
+  filter:sepia(100%);
+  transition: all 0.8s linear;
+
+}
+
+#grid-galerie figure:hover{
+  filter: sepia(0%);
+}
+
+#grid-galerie figcaption{
+  text-align:center;
+  font-size: 0.3 rem;
+  counter-increment: nrimag 1; /* ????*/
+  transition: all 0.8s linear;
+}
+
+#grid-galerie figure:hover figcaption{
+  text-shadow: 5px 5px 20px blue;
+}
+
+
+#grid-galerie figcaption::before{
+  content: counter(nrimag, lower-roman) ")"; /*de citit exemplul cu countere*/
+}
+
+@media screen and (min-width:1201px){
+
+#grid-galerie figure:nth-child(8n+3){
+  grid-column: 1 / span 1;
+
+}
+#grid-galerie figure:nth-child(8n+4){
+  grid-column: 3 / span 1;
+}
+#grid-galerie figure:nth-child(8n+5)
+{
+  grid-column: 2 / span 1;
+}
+#grid-galerie figure:nth-child(8n)
+{
+  grid-column: 3 / span 1;
+}
+
+}
+@media screen and (max-width:1200px){
+  #grid-galerie {
+      display:grid;
+      grid-template-columns: repeat(2,minmax(0,1fr));
+      grid-row-gap:0.5em;
+      grid-column-gap:0.5em;
+  }
+
+  grid-galerie figure:nth-child(odd){
+    grid-column: 1/span 1;
+  }
+  grid-galerie figure:nth-child(even){
+    grid-column: 2/span 1;
+  }
+}
+
+@media screen and (max-width:800px){
+  #grid-galerie {
+      display:block;
+  }
+}
